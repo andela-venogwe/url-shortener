@@ -3,3 +3,12 @@ extends layout
 block content
   h1 URL Shortener Microservice
   p Welcome to URL Shortener Microservice
+  h2  Example creation usage:
+  p(style="color:blue") https://v-url-shortener.herokuapp.com/new/https://www.google.com
+  p(style="color:blue") https://v-url-shortener.herokuapp.com/new/http://foo.com:80
+  h2 Example creation output
+  p(style="color:red") { "original_url":"http://foo.com:80", "short_url":"https://v-url-shortener.herokuapp.com/8170" }
+  h3 Usage:
+  p(style="color:blue") https://v-url-shortener.herokuapp.com/2871
+  p Will redirect to:
+  p(style="color:blue") https://www.google.com/
